@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: i-Fact
+Version: 1.0.0
+Author: Webstrot
+
+-->
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zxx">
+<!--[endif]-->
+
+<head>
+    <meta charset="utf-8"/>
+    <title>i-Fact Responsive HTML Template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/construction_02/favicon.png">
+    <meta name="description" content="i-Fact, Start Up"/>
+    <meta name="keywords" content="i-Fact, Start Up"/>
+    <meta name="author" content=""/>
+    <meta name="MobileOptimized" content="320"/>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="../assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Web Fonts -->
+    <link href="../assets/css/fonts.css" rel="stylesheet">
+    <!-- Animation Css -->
+    <link href="../assets/css/animate.css" rel="stylesheet">
+    <!-- Flaticon Css -->
+    <link href="../assets/flaticon/construction_02/flaticon.css" rel="stylesheet">
+    <!-- Owl Carousel -->
+    <link href="../assets/css/owl.theme.default.css" rel="stylesheet">
+    <link href="../assets/css/owl.carousel.css" rel="stylesheet">
+    <!-- Style CSS 1 -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+    <link href="../assets/css/responsive.css" rel="stylesheet">
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=08da7702-f104-43c4-a46e-0fc23175899a&lang=ru_RU"></script>
+    <style>
+        #map {
+            width: 600px;
+            height: 400px;
+            overflow: hidden; /* Обрезание содержимого за пределами контейнера */
+        }
+
+        /* Стилизация iframe, содержащего карту */
+        #map iframe {
+            width: 100%; /* Чтобы iframe занимал всю ширину контейнера */
+            height: 100%; /* Чтобы iframe занимал всю высоту контейнера */
+            border-radius: 25px; /* Закругление углов */
+        }
+    </style>
+</head>
+
+<body>
+
+<a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
+
+<!-- Preloader start -->
+<div id="preloader">
+    <div id="status">
+        <div class="status-mes"></div>
+    </div>
+</div>
+<!-- Preloader end -->
+
+<div data-scroll='0' class="full_width">
+    <!-- const2_serach_header start -->
+    <div class="const2_serach_header">
+        <div class="const2_searchbox">
+            <button class="close">×</button>
+            <form>
+                <input type="search" placeholder="Search …">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <!-- const2_serach_header end -->
+    <!--const2_header Start-->
+    <div class="const2_header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-6 col-lg-3">
+
+                    <div class="const2_logo_wrapper">
+                        <a href="index.html">
+                            <img width="115" src="../assets/images/my/image-removebg-preview.png" alt=""/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-6 col-6 resp_main_heade">
+                    <div class="const2_menu_right_wrapper">
+                        <!--  <div class="const2_search_wrap">
+                              <button class="const2_searchd"><i class="fa fa-search"></i></button>
+                          </div>-->
+                        <div id="const2_toggle" class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                            <button class="doc_searchd_bar"><i class="fas fa-bars"></i></button>
+                        </div>
+                        <!--  <a href="#" class="const2_btn_style d-none d-sm-block d-md-block d-lg-block d-xl-block">Enquiry</a>
+               -->       </div>
+                    <div class="const2_main_menu_wrapper d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                        <nav class="menu_scroll">
+                            <ul>
+                                <li class="active"><a href="0">Главная</a></li>
+                                <li><a href="1">О нас</a></li>
+                                <li><a href="2">Услуги</a></li>
+                                <li><a href="3">Клиенты</a></li>
+                                <li><a href="4">Цены</a></li>
+                                <li><a href="5">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--const2_header wrapper end-->
+    <div id="const2_sidebar" class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+        <a class="const2_sidebar_logo" href="#">
+            <img width="145" src="../assets/images/my/image-removebg-preview.png" alt="">
+        </a>
+        <div id="const2_toggle_close">&times;</div>
+        <div id='const2_cssmenu' class="menu_scroll">
+            <ul class="sidebb">
+                <li><a href="0">Главная</a></li>
+                <li><a href="1">О нас</a></li>
+                <li><a href="2">Услуги</a></li>
+                <li><a href="3">Клиенты</a></li>
+                <li><a href="4">Цены</a></li>
+                <li><a href="5">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- responsive const2_header end -->
+    <!-- slider wrapper start-->
+    <div class="const2_slider_wrapper slider-area">
+
+        <div class="const2_top_righ_shape">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1063px" height="900.01px"
+                 viewBox="0 0 1063 900.01" enable-background="new 0 0 1063 900.01" xml:space="preserve">
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FEC13B"
+                          d="M326.858,0H1063v900.01H0l471.813-663.969L326.858,0z"/>
+                </svg>
+        </div>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="carousel-captions caption-1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <div class="const2_content">
+                                        <h1 data-animation="animated bounceInLeft" class="">Помощь
+                                            в грузоперевозках</h1>
+                                        <h2 data-animation="animated bounceInUp">Перевозчик<br>
+                                            с большим опытом</h2>
+
+                                        <p data-animation="animated bounceInUp">Оказываем услуги в сфере грузоперевозок,
+                                            имеется современное оборудование, включая механизм манипулятора.</p>
+                                        <!--  <div class="const2_header_btn const2_slider_btn full_width">
+                                              <ul>
+                                                  <li data-animation="animated bounceInLeft">
+                                                      <a href="#">read more</a>
+                                                  </li>
+
+                                              </ul>
+                                          </div>-->
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <div class="const2_slider_main_img_wrapper">
+                                        <img width="630px" src="../assets/images/my/image-removebg.png"
+                                             alt="slider_img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-captions caption-2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <div class="const2_content">
+                                        <h1 data-animation="animated bounceInLeft" class="">Помощь
+                                            в грузоперевозках</h1>
+                                        <h2 data-animation="animated bounceInUp">Перевозчик<br>
+                                            с большим опытом</h2>
+
+                                        <p data-animation="animated bounceInUp">Оказываем услуги в сфере грузоперевозок,
+                                            имеется современное оборудование, включая механизм манипулятора.</p>
+                                        <!-- <div class="const2_header_btn const2_slider_btn full_width">
+                                             <ul>
+                                                 <li data-animation="animated bounceInLeft">
+                                                     <a href="#">read more</a>
+                                                 </li>
+
+                                             </ul>
+                                         </div>-->
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <div class="const2_slider_main_img_wrapper">
+                                        <img width="630px" src="../assets/images/my/image-removebg.png"
+                                             alt="slider_img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-captions caption-3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <div class="const2_content">
+                                        <h1 data-animation="animated bounceInLeft" class="">Помощь
+                                            в грузоперевозках</h1>
+                                        <h2 data-animation="animated bounceInUp">Перевозчик<br>
+                                            с большим опытом</h2>
+
+                                        <p data-animation="animated bounceInUp">Оказываем услуги в сфере грузоперевозок,
+                                            имеется современное оборудование, включая механизм манипулятора. </p>
+                                        <!-- <div class="const2_header_btn const2_slider_btn full_width">
+                                             <ul>
+                                                 <li data-animation="animated bounceInLeft">
+                                                     <a href="#">read more</a>
+                                                 </li>
+
+                                             </ul>
+                                         </div>-->
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                                    <div class="const2_slider_main_img_wrapper">
+                                        <img width="630px" src="../assets/images/my/image-removebg.png"
+                                             alt="slider_img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nevigation">
+                    <a class="prev" href="#carousel-example-generic" role="button" data-slide="prev"> <span></span> <i
+                            class="flaticon-left-arrow"></i>
+                    </a>
+                    <a class="next" href="#carousel-example-generic" role="button" data-slide="next"> <span></span> <i
+                            class="flaticon-arrow-pointing-to-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider wrapper end-->
+</div>
+
+<!--about us wrapper start-->
+<div data-scroll='1' class="full_width">
+    <div class="const2_slider_bottom_wrapper full_width animated-row">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+
+
+                    <div class="const2_slider_bottom_img">
+
+                        <img src="../assets/images/my/imgonline2.jpg" alt="img">
+                        <!--https://webstrot.com/html/i-fact/images/construction_02/img1.jpg-->
+                        <img class="image2" src="../assets/images/my/images.jpg" alt="img">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+
+                    <div class="const2_slider_bottom_text">
+                        <h2>Готовы к любым <br>вызовам</h2>
+                        <p>
+                            Наша организация с многолетним опытом специализируется на грузоперевозках и услугах
+                            манипулятора с 2018 года. Мы предлагаем высококачественные услуги в области грузоперевозок и
+                            манипуляторных операций как в городе, так и за городом, обеспечивая нашим клиентам
+                            безупречный сервис и внимательное отношение к их потребностям.
+
+                        </p>
+
+                        <br>
+
+                        <p class="black_p">
+                            Реквизиты:<br>ИП Коренько Денис Казимирович<br> УНП:
+                            193073052<br> Свидетельсто выдано 02.05.2018 г.<br> Р/сч: BY29 SLAN 3013 2901 6000 0010 0000<br>
+                            в Дополнительный офис N 11 ЗАО Банк ВТБ (Беларусь) 220140<br>Адрес: г. Минск, ул.
+                            Притыцкого,
+                            91, BIC SWIFT: SLANBY22</p>
+
+                        <!-- <a href="#" class="const2_btn_style">Read More</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-scroll='2' class="full_width">
+
+
+    <!-- services wrapper start-->
+    <div class="feature-area full_width animated-row">
+
+        <div class="const2_sp_heading_wraper animate" data-animate="fadeInUp">
+
+            <h3>Услуги</h3>
+
+        </div>
+        <!-- SINGLE FEATURE -->
+        <article class="single-feature feature-bg-one">
+            <div class="media">
+                <div class="media-body">
+                    <i class="fas fa-paint-roller"></i>
+                    <h3 class="media-heading">Грузоперевозки до 20 тон</h3>
+                    <p>
+                        Включает в себя организацию и осуществление транспортировки различных грузов с массой до 20
+                        тонн,планирования маршрутов до доставки по назначению.</p>
+                </div>
+            </div>
+        </article>
+        <!-- // END SINGLE FEATURE -->
+        <!-- SINGLE FEATURE -->
+        <article class="single-feature feature-bg-two">
+            <div class="media">
+
+                <div class="media-body">
+                    <i class="fas fa-wrench"></i>
+                    <h3 class="media-heading">Услуги манипулятора</h3>
+                    <p>Включает в себя аренду специализированной техники с водителем для погрузочно-разгрузочных работ,
+                        подъём и перемещение грузов различной массы и объёма.</p>
+                </div>
+            </div>
+        </article>
+        <!-- // END SINGLE FEATURE -->
+        <!-- SINGLE FEATURE -->
+        <article class="single-feature feature-bg-three">
+            <div class="media">
+
+                <div class="media-body">
+                    <i class="fas fa-home"></i>
+                    <h3 class="media-heading">Монтаж оборудования</h3>
+                    <p>Включает в себя процесс установки, настройки и подключения различных технических устройств и
+                        систем: сборку, монтаж, электрическое подключение, тестирование и пуско-наладочные работы.</p>
+                </div>
+            </div>
+        </article>
+        <!-- // END SINGLE FEATURE -->
+        <!-- SINGLE FEATURE -->
+        <article class="single-feature feature-bg-four">
+            <div class="media">
+
+                <div class="media-body">
+                    <i class="fas fa-building"></i>
+                    <h3 class="media-heading">Работы на объекте</h3>
+                    <p> Включают в себя проведение различных строительных, ремонтных или инженерных операций согласно
+                        утвержденной  документации и требованиям заказчика на месте проведения работ.</p>
+                </div>
+            </div>
+        </article>
+        <!-- // END SINGLE FEATURE -->
+    </div>
+    <!-- services wrapper end-->
+    <!--about us wrapper end-->
+    <div data-scroll='3' class="full_width">
+        <div class="const2_work_process_wrapper full_width ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="const2_work_process_img">
+                            <img src="../assets/images/my/FAQ.jpg" alt="img" class="img-responsive">
+                            <br>
+                            <br>
+                            <img style="height:250px;"
+                                 src="../assets/images/my/9ffd3530-8dce-4b87-a25b-2c3f351c262f.jpg"
+                                 alt="img" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="const2_accordian_wraper">
+                            <div id="accordion" role="tablist">
+                                <h1>Данные при оформлении услуги</h1>
+                                <div class="card">
+
+                                    <div class="const2_card_pagee" role="tab" id="heading1">
+                                        <h5 class="h5-md">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapseTwo"
+                                               role="button"
+                                               aria-expanded="false" aria-controls="collapseTwo">
+                                                Месторасположение
+
+                                            </a>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseTwo" class="collapse show" role="tabpanel"
+                                         aria-labelledby="heading1"
+                                         data-parent="#accordion">
+                                        <div class="card-body">
+
+                                            <div class="card_cntnt">
+                                                <p>Для успешной перевозки необходимо, чтобы организация-заказчик
+                                                    предоставила точные данные о местоположении точек загрузки и
+                                                    выгрузки, а
+                                                    также предварительную информацию о маршруте и дорожных условиях.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+
+                                    <div class="const2_card_pagee" role="tab" id="heading2">
+                                        <h5 class="h5-md">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapsethree"
+                                               role="button"
+                                               aria-expanded="false" aria-controls="collapsethree">
+                                                Характеристики груза
+
+                                            </a>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapsethree" class="collapse" role="tabpanel" aria-labelledby="heading2"
+                                         data-parent="#accordion">
+                                        <div class="card-body">
+
+                                            <div class="card_cntnt">
+                                                <p> Для оптимальной перевозки груза важно, чтобы заказчик предоставил
+                                                    информацию о характеристиках груза, такие как его вес, объем, тип,
+                                                    особенности упаковки и требования к транспортировке..
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="card">
+
+                                    <div class="const2_card_pagee" role="tab" id="heading">
+                                        <h5 class="h5-md">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapse1" role="button"
+                                               aria-expanded="false" aria-controls="collapse1">
+                                                Сроки доставки
+
+                                            </a>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading"
+                                         data-parent="#accordion">
+                                        <div class="card-body">
+
+                                            <div class="card_cntnt">
+                                                <p> Для оптимального планирования перевозки также необходима информация
+                                                    о
+                                                    сроках доставки, которую предоставляет организация-заказчик. Это
+                                                    позволяет перевозчику точно оценить время и ресурсы, необходимые для
+                                                    выполнения заказа, и обеспечить своевременную доставку груза.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card">
+
+                                    <div class="const2_card_pagee" role="tab" id="heading0">
+                                        <h5 class="h5-md">
+                                            <a class="collapsed" data-toggle="collapse" href="#collapse01" role="button"
+                                               aria-expanded="false" aria-controls="collapse01">
+                                                Реквизиты заказчика
+
+                                            </a>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapse01" class="collapse" role="tabpanel" aria-labelledby="heading0"
+                                         data-parent="#accordion">
+                                        <div class="card-body">
+
+                                            <div class="card_cntnt">
+                                                <p> Для удобства оформления документов и проведения оплаты, просим
+                                                    организацию-заказчика предоставить свои реквизиты: полное название
+                                                    организации, ИНН, КПП, адрес юридического и фактического
+                                                    местонахождения, а также контактные телефоны и электронную почту для
+                                                    связи.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- pricing wrapper start-->
+<div data-scroll='4' class="full_width">
+    <div class="const2_pricing_wrapper full_width animated-row">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+                    <div class="const2_sp_heading_wraper animate" data-animate="fadeInUp">
+                        <h3>Наши цены</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="const2_pricing_box_wrapper full_width">
+                        <img width="150px" src="../assets/images/my/delivery-truck.jpg" alt="img">
+
+                        <h2><span class="const2_dollarr"> </span> Договорная </h2> <span class="const2_monthly"></span>
+
+                        <ul class="const2_pricing_list22">
+                            <li>Грузоперевозка
+
+                            </li>
+                            <li>В пределах Минска
+
+                            </li>
+
+
+                            <!--  <li>
+                                  1.5GB Storage
+
+                              </li>-->
+
+                        </ul>
+                        <a href="#" class="const2_price_btn" id="scrollToElement">Рассчитать</a>
+
+                        <!--<a href="#" class="const2_price_btn">Рассчитать</a>-->
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="const2_pricing_box_wrapper full_width">
+                        <img width="150px" src="../assets/images/my/delivery-truck.jpg" alt="img">
+
+                        <h2><span class="const2_dollarr"></span> Договорная</h2> <span class="const2_monthly"></span>
+
+                        <ul class="const2_pricing_list22">
+                            <li>Грузоперевозка
+
+                            </li>
+                            <li>В пределах Минской области
+
+                            </li>
+
+                            <!-- <&#45;&#45;<li>
+                                 2.5GB Storage
+
+                             </li>&ndash;&gt;-->
+
+                        </ul>
+                        <a href="#" class="const2_price_btn" id="scrollToElement1">Рассчитать</a>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="const2_pricing_box_wrapper full_width">
+                        <img width="150px" src="../assets/images/my/delivery-truck.jpg" alt="img">
+
+                        <h2><span class="const2_dollarr"></span> Договорная </h2> <span class="const2_monthly"></span>
+
+                        <ul class="const2_pricing_list22">
+                            <li>Грузоперевозка
+
+                            </li>
+                            <li>За пределами Минской области
+
+                            </li>
+
+
+                            <!--
+                             <li>
+                                 4.5GB Storage
+
+                             </li>-->
+
+                        </ul>
+                        <a href="#" class="const2_price_btn" id="scrollToElement2">Рассчитать</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!--<div class="const2_newsletter_wrapper full_width">
+        <div class="const2_news_img_wrapper">
+            <img src="images/construction_02/news_img.jpg" alt="img">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="const2_newslwtteter_left">
+                        <h2> Ready To Work with Our Company? </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in condimentum
+                            <br> leo in elementum sodales, magna eros vehicula ante.</p>
+                    </div>
+                    <div class="const2_newslwtteter_button">
+                        <div class="const2_work_btn_style">
+                            <a href="#" class="const2_btn_style">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+</div>
+
+
+<!-- pricing wrapper end-->
+<div data-scroll='5' class="full_width">
+    <!--location wrapper start-->
+    <div class="const2_location_wrapper full_width animated-row">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 abt_section">
+                    <div class="abt_heading_wrapper">
+                        <h1>Оставить заявку</h1>
+
+                    </div>
+                    <!-- <form action="https://script.google.com/macros/s/AKfycbyy3yIBTK47yCpEN-JsdAIsRLrklj2qPjs3XGF6W-SdUy5EYX1RCPnNuNFLwDoGTO7ypw/exec"
+                           method="post">
+                         <div class="row">
+                             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                 <div class="const2_contect_form1">
+                                     <input type="text" name="fullName" placeholder="ФИО / Название организации"
+                                            class="require" data-valid="fullName"
+                                            data-error="Введите корректное ФИО / Название организации.">
+                                 </div>
+                             </div>
+                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                 <div class="const2_contect_form1">
+                                     <input type="text" name="email" placeholder="Email" class="require"
+                                            data-valid="email" data-error="Ввведите действительную почту.">
+                                 </div>
+                             </div>
+                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                 <div class="const2_contect_form1">
+                                     &lt;!&ndash; data-valid="phone" data-error="Ввведите корректный номер телефона( +375 29/33/44 *** ** **)."
+                                    &ndash;&gt; <input type="text" name="phone" placeholder="Телефон" class="require"  data-valid="phone" data-error="Ввведите действительную телефон.">
+                                 </div>
+                             </div>
+                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                 <div class="const2_contect_form1">
+                                     <input  type="hidden" name="subject" placeholder="Кому" value="ИП Коренько">
+                                 </div>
+                             </div>
+                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                 <div class="const2_contect_form1">
+                                     &lt;!&ndash;data-valid="message" data-error="Превышен лимит символов 300."
+                                    &ndash;&gt;
+                                     <textarea rows="6" name="message" placeholder="Message" class="require" data-valid="message" data-error="Ввведите действительную message." ></textarea>
+                                 </div>
+                             </div>
+                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                 <div class="response"></div>
+                                 <div class="const2_contect_btn">
+                                     <button type="button" class="submitForm">Отправить</button>
+                                 </div>
+                             </div>
+                         </div>
+                     </form>
+ -->
+
+                    <form id="sendRequestForm"
+                          action="https://script.google.com/macros/s/AKfycbz745qupjvEjfavTV3_ferjali_32qmgRqfWMa2mq1u-N5YZ8qkrVffj-7wBKgHDuYr/exec"
+                          method="post">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="const2_contect_form1">
+                                    <div class="error-message" id="fullNameError"></div>
+                                    <input type="text" name="fullName" id="fullName"
+                                           placeholder="ФИО / Название организации">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="const2_contect_form1">
+                                    <div class="error-message" id="emailError"></div>
+                                    <input type="email" name="email" id="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="const2_contect_form1">
+                                    <div class="error-message" id="phoneError"></div>
+                                    <input type="tel" name="phone" id="phone" placeholder="Телефон">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="const2_contect_form1">
+                                    <div class="error-message" id="subjectError"></div>
+                                    <input type="hidden" name="subject" id="subject" placeholder="Subject"
+                                           value="ИП КОРЕНЬКО" readonly>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="const2_contect_form1">
+                                    <div class="error-message" id="messageError"></div>
+                                    <textarea rows="6" name="message" id="message" placeholder="Сообщение"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div id="resultMessage"></div>
+                                <div class="const2_contect_btn">
+                                    <button type="button" onclick="validateForm()" class="submitForm">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="abt_heading_wrapper">
+                        <h1>Местоположение</h1>
+                    </div>
+                    <div id="map" style="width: 600px; height: 400px; border-radius:15px "></div>
+                    <!--<div id='map'></div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--location wrapper end-->
+    <!-- footer wrapper start-->
+
+    <div data-scroll='6' class="const2_footer_wrapper full_width">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+
+                    <div class="const2_slider_bottom_text">
+                        <a href="#"><img width="100px" src="../assets/images/my/image-removebg-preview.png" alt="logo">
+
+                        </a>
+                        <h2>Cвяжитесь с нами по телефону или оставьте
+                            заявку!</h2>
+
+                        <p class="black_p" style="margin-top:-20px">Телефон:<br> MTC: +375 33 672-65-99
+                            <br> A1: +375 29 674-82-18</p>
+
+                        <p style="margin-top:-20px">ИП Коренько Денис Казимирович УНП: 193073052 Свидетельсто выдано
+                            02.05.2018 г. Р/сч: BY29
+                            SLAN 3013 2901 6000 0010 0000 в Дополнительный офис N 11 ЗАО Банк ВТБ (Беларусь) 220140, г.
+                            Минск, ул. Притыцкого, 91, BIC SWIFT: SLANBY22,.</p>
+
+                        <!-- <div class="footer_const2_content_box full_width">
+                             <h3>© Copyright 2020 - 21 by <a href="http://webstrot.com/" target="_blank"> Webstrot </a>| All
+                                 Rights Reserved.</h3>
+                         </div>-->
+                        <!-- <ul class="const2_icon_list_news full_width">
+                             <li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+                             <li>
+                                 <a href="#" class="twit"> <i class="fab fa-twitter"></i>
+                                 </a>
+                             </li>
+                             <li><a href="#" class="linkd"><i class="fab fa-linkedin-in"></i></a></li>
+                             <li><a href="#" class="google"><i class="fab fa-google-plus-g"></i></a></li>
+
+                         </ul>-->
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="const2_footer_shape">
+
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             x="0px" y="0px" width="865.958px" height="836.006px" viewBox="0 0 865.958 836.006"
+                             enable-background="new 0 0 865.958 836.006" xml:space="preserve">
+                                <g id="BACKGROUND20">
+                                </g>
+                            <g id="BACKGROUND10">
+                                </g>
+                            <g id="DESIGNED">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" fill="ffc13b" d="M865.958,32.549c0,0-163.222-100.092-234.402,50.766
+		c-26.133,57.885,8.613,177.618-236.479,195.384c-74.912,2.77-144.637,78.289-137.805,191.985
+		c6.833,113.696-144.798,155.425-202.453,227.664C-9.779,779.286-1.773,787.933,3.354,836.006c166.927-0.52,862.604,0,862.604,0
+		V32.549z"/>
+                                </g>
+                            </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer wrapper end-->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<!-- Bootstrap js -->
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<!-- Counter js -->
+<script src="../assets/js/jquery.countTo.js"></script>
+<script src="../assets/js/jquery.inview.min.js"></script>
+<!-- owl carousel js -->
+<script src="../assets/js/owl.carousel.js"></script>
+<!-- Custom js -->
+<script src="../assets/js/testimonial.js"></script>
+<script src="../assets/js/jquery.bxslider.min.js"></script>
+<script src="../assets/js/jquery.magnific-popup.js"></script>
+<!-- Contact Form js -->
+<script src="../assets/js/contact_form.js"></script>
+<script src="../assets/js/custom.js"></script>
+<script src="../assets/js/scrolling.js"></script>
+
+<script>
+
+    ymaps.ready(init);
+
+    function init() {
+        var myMap = new ymaps.Map("map", {
+            center: [53.902496, 27.561481], // Координаты Минска
+            zoom: 12 // Масштаб карты
+        });
+
+        // Создаем метку на карте
+        var myPlacemark = new ymaps.Placemark(
+            [53.902496, 27.561481], // Координаты улицы Притыцкого 91
+            {hintContent: "ул. Притыцкого 91, Минск"},
+            {preset: "islands#redDotIcon"} // Иконка метки
+        );
+
+        // Добавляем метку на карту
+        myMap.geoObjects.add(myPlacemark);
+    }
+
+</script>
+<script src="https://script.google.com/macros/s/AKfycbyg6xs2eZQPVzR2cV_nl9G2SAV3m-gBQgvNT1coXz0ep6ZAY9PcKjJg4xSkrNU1HUtQ/exec"></script>
+
+<script>
+    function validateForm() {
+        // Устанавливаем флаги валидации на начальное значение (false)
+        var isFullNameValid = false;
+        var isEmailValid = false;
+        var isPhoneValid = false;
+        var isSubjectValid = false;
+        var isMessageValid = false;
+
+
+        function setValidity(element, isValid, errorMessage) {
+            var errorId = element.id + "Error";
+            var errorElement = document.getElementById(errorId);
+
+            if (isValid) {
+                element.classList.remove("invalid");
+                element.classList.add("valid");
+                errorElement.innerHTML = "";
+            } else {
+                element.classList.remove("valid");
+                element.classList.add("invalid");
+                errorElement.innerHTML = errorMessage || "Поле обязательно для заполнения";
+            }
+
+            return isValid;
+        }
+
+        function isEmpty(value) {
+            return value.trim() === "";
+        }
+
+        // Проводим валидацию для каждого поля
+        isFullNameValid = setValidity(document.getElementById("fullName"), !isEmpty(document.getElementById("fullName").value) && /^[A-Za-zА-Яа-яЁё\s]+$/u.test(document.getElementById("fullName").value), "Введите корректно ФИО");
+        isEmailValid = setValidity(document.getElementById("email"), !isEmpty(document.getElementById("email").value) && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(document.getElementById("email").value), "Введите действительную почту");
+        isPhoneValid = setValidity(document.getElementById("phone"), !isEmpty(document.getElementById("phone").value) && /^\+\d{12}$/.test(document.getElementById("phone").value), "Введите корректный номер телефона");
+        isSubjectValid = setValidity(document.getElementById("subject"), !isEmpty(document.getElementById("subject").value) && /^ИП\sКОРЕНЬКО$/i.test(document.getElementById("subject").value), "Please enter a valid subject (ИП КОРЕНЬКО)");
+        isMessageValid = setValidity(document.getElementById("message"), !isEmpty(document.getElementById("message").value) && /^[\s\S]{1,600}$/.test(document.getElementById("message").value), "Введите корректно сообщение (лимит 600 символов)");
+
+
+        /* isCourseValid = setValidity(document.getElementById("course"), !isEmpty(document.getElementById("course").value), "Please select a course");
+         isEnglishLevelValid = setValidity(document.getElementById("englishLevel"), !isEmpty(document.getElementById("englishLevel").value), "Please select an English level");
+ */
+        // Отправка формы, если все поля прошли валидацию
+        if (isFullNameValid && isEmailValid && isPhoneValid && isSubjectValid && isMessageValid) {
+            $.ajax({
+                url: 'https://script.google.com/macros/s/AKfycbz745qupjvEjfavTV3_ferjali_32qmgRqfWMa2mq1u-N5YZ8qkrVffj-7wBKgHDuYr/exec',
+                method: 'POST',
+                dataType: 'json',
+                data: $('#sendRequestForm').serialize(),
+                success: function (response) {
+                    // Выводим сообщение об успешной отправке формы на странице
+                    $('#resultMessage').text('Отправка выполнена!\n С вами свяжутся в течении 24ч.');
+                },
+                error: function (xhr, status, error) {
+                    // Выводим сообщение об ошибке отправки формы на странице
+                    $('#resultMessage').text('Произошла ошибка, повторите попытку позже.');
+                }
+            });
+        }
+    }
+</script>
+
+</body>
+
+</html>
