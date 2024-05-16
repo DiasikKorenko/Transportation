@@ -9104,7 +9104,7 @@ button:focus {
 }
 .const2_slider_wrapper .carousel-inner .carousel-item .carousel-captions .const2_content h1 {
 	color: #ffc13b;
-	font-family: 'Playball';
+	font-family: 'Poppins', sans-serif;
 	font-size: 30px;
 	text-transform: capitalize;
 	margin-bottom: 15px;
